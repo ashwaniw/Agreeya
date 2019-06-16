@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form>
+        <div class="form-group">
+          <label for="userMail">Email address</label>
+          <input type="email" class="form-control" id="userMail" name="userMail" placeholder="Enter email" 
+          [(ngModel)]="userMail">           
+        </div>
+        <div class="form-group">
+          <label for="userPass">Password</label>
+          <input type="password" class="form-control" id="userPass" name="userPass" placeholder="Password" 
+          [(ngModel)]="userPass" minlength="8">
+        </div>
+        <button type="submit" class="btn btn-primary" (click)=submitLoginForm()>Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

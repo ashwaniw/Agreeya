@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+  <div class="col-md-6">
+    <ul class="list-group list-group-flush" style="height: 200px;overflow:auto">
+      <li class="list-group-item" 
+      *ngFor="let listItem of dataListing"
+          (click)="selectItem(listItem)">{{listItem.title}}</li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <div>
+      <strong>Id:</strong> {{item}}
+    </div>
+    <!--<div>
+      <strong>title:</strong> {{selectedItem.title}}
+    </div>-->
+  </div>
+</div>
+</div>
